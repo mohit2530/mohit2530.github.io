@@ -7,12 +7,11 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { DarkModeRounded, LightModeRounded } from '@mui/icons-material';
-import { Stack } from '@mui/material';
+import { Stack, Switch } from '@mui/material';
 
 const pages = ['Home', 'About', 'Resume', 'Contact'];
 
@@ -31,25 +30,6 @@ function NavBar({ currentTheme, handleTheme }) {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -114,22 +94,15 @@ function NavBar({ currentTheme, handleTheme }) {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Button onClick={handleTheme}>
-              {currentTheme ? (
-                <Stack spacing="0.5rem" direction="row" sx={{ color: 'text.secondary' }}>
-                  <DarkModeRounded />
-                  <Typography>Dark mode</Typography>
-                </Stack>
-              ) : (
-                <Stack spacing="0.5rem" direction="row" sx={{ color: 'text.secondary' }}>
-                  <LightModeRounded />
-                  <Typography>Light mode</Typography>
-                </Stack>
-              )}
-            </Button>
-            <IconButton sx={{ p: 0 }}>
-              <Avatar alt="Mohit Paudyal" src="/static/images/avatar/1.jpg" />
-            </IconButton>
+            <Stack sx={{ flexDirection: 'row', spacing: '0.5rem', color: 'text.secondary', alignContent: 'center' }}>
+              <Switch
+                color='text.secondary'
+                checked={currentTheme}
+                onChange={handleTheme}
+                inputProps={{ 'aria-label': 'light mode vs dark mode' }}
+              />
+              <IconButton>{currentTheme ? <DarkModeRounded /> : <LightModeRounded />}</IconButton>
+            </Stack>
           </Box>
         </Toolbar>
       </Container>
