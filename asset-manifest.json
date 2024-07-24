@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/mohit2530.github.io/static/css/main.c6575f1f.css",
-    "main.js": "/mohit2530.github.io/static/js/main.4c447b23.js",
-    "static/js/453.41811d64.chunk.js": "/mohit2530.github.io/static/js/453.41811d64.chunk.js",
-    "static/media/resumeLink.pdf": "/mohit2530.github.io/static/media/resumeLink.a1609af6ae54e85715bb.pdf",
-    "index.html": "/mohit2530.github.io/index.html",
-    "main.c6575f1f.css.map": "/mohit2530.github.io/static/css/main.c6575f1f.css.map",
-    "main.4c447b23.js.map": "/mohit2530.github.io/static/js/main.4c447b23.js.map",
-    "453.41811d64.chunk.js.map": "/mohit2530.github.io/static/js/453.41811d64.chunk.js.map"
+    "main.css": "/my-portfolio/static/css/main.c6575f1f.css",
+    "main.js": "/my-portfolio/static/js/main.f0ede57a.js",
+    "static/js/453.41811d64.chunk.js": "/my-portfolio/static/js/453.41811d64.chunk.js",
+    "static/media/resumeLink.pdf": "/my-portfolio/static/media/resumeLink.a1609af6ae54e85715bb.pdf",
+    "index.html": "/my-portfolio/index.html",
+    "main.c6575f1f.css.map": "/my-portfolio/static/css/main.c6575f1f.css.map",
+    "main.f0ede57a.js.map": "/my-portfolio/static/js/main.f0ede57a.js.map",
+    "453.41811d64.chunk.js.map": "/my-portfolio/static/js/453.41811d64.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c6575f1f.css",
-    "static/js/main.4c447b23.js"
+    "static/js/main.f0ede57a.js"
   ]
 }
