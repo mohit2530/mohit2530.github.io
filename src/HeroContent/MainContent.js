@@ -1,4 +1,5 @@
 import { Button, Stack, Typography } from '@mui/material';
+import ResumeLink from './resumeLink.pdf';
 
 export default function MainContent() {
   return (
@@ -15,8 +16,13 @@ export default function MainContent() {
         in mind.
       </Typography>
       <Stack direction="row" spacing="2rem">
-        <Button variant="outlined">Download Resume</Button>
-        <Button variant="contained">Email</Button>
+        <Button variant="outlined" onClick={() => window.open(ResumeLink, '_blank', 'noopener,noreferrer')}>
+          Download Resume
+        </Button>
+        <Button variant="contained" onClick={(e) => {
+          window.location.href = 'mailto:mohit.paudyal@gmail.com';
+          e.preventDefault();
+        }}>Email</Button>
       </Stack>
     </Stack>
   );

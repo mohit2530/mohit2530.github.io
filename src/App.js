@@ -6,6 +6,8 @@ import { useState } from 'react';
 import MainContent from './HeroContent/MainContent';
 import BodyContent from './HeroContent/BodyContent';
 import Projects from './HeroContent/Projects';
+import Footer from './Footer/Footer';
+import Contact from './Contact/Contact';
 
 function App() {
   const [lightMode, setLightMode] = useState(true);
@@ -19,6 +21,9 @@ function App() {
       <Divider />
       <BodyContent />
       <Projects />
+      <Divider />
+      <Contact />
+      <Footer />
     </ThemeProvider>
   );
 }

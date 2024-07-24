@@ -24,6 +24,7 @@ export default function Projects() {
       id: 3,
       label: 'Climate Inventory Management Toolkit',
       language: ['React', 'Nodejs', 'Supabase', 'Docker'],
+      imageUrl: './climate.png',
       caption:
         'Self containerized docker instance of inventory management. Uses supabase as a service to store and manipulate data.',
       link: 'https://github.com/earmuff-jam/climate',
@@ -32,6 +33,7 @@ export default function Projects() {
       id: 4,
       label: 'Asset Tracker',
       language: ['Go', 'React', 'Nodejs', 'Docker'],
+      imageUrl: './assetalert.png',
       caption:
         'Self containerized docker instance of custom asset tracker. Uses docker to deploy anywhere, anytime. In built scripts to manage assets with location tracking capabilities.',
       link: 'https://github.com/earmuff-jam/mashed',
@@ -47,7 +49,7 @@ export default function Projects() {
           <Typography variant="body1">Peek into my engineering side.</Typography>
         </Stack>
       </Stack>
-      <Stack flexWrap="wrap" useFlexGap spacing="2rem" direction="row">
+      <Stack flexWrap="wrap" useFlexGap spacing="2rem" direction="row" sx={{ mt: '2rem' }}>
         {projects.map((v) => (
           <Card key={v.id} sx={{ width: '25rem' }}>
             <CardMedia sx={{ height: 140 }} image={v.imageUrl} title="green iguana" />
