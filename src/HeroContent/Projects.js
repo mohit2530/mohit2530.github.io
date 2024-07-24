@@ -41,7 +41,7 @@ export default function Projects() {
   ];
 
   return (
-    <Container maxWidth="xl" sx={{ my: '20rem' }}>
+    <Container maxWidth="xl" sx={{ my: '5rem' }}>
       <Stack direction="row" spacing="2rem" alignItems="center">
         <Workspaces />
         <Stack>
