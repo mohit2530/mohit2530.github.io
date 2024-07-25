@@ -1,5 +1,5 @@
 import { Workspaces } from '@mui/icons-material';
-import { Button, Card, CardActions, CardContent, CardMedia, Container, Stack, Typography } from '@mui/material';
+import { Button, Card, CardActions, CardContent, CardMedia, Chip, Container, Stack, Typography } from '@mui/material';
 
 export default function Projects() {
   const projects = [
@@ -60,6 +60,11 @@ export default function Projects() {
               <Typography variant="body2" color="text.secondary">
                 {v.caption}
               </Typography>
+              <Stack direction="row" spacing="0.2rem">
+                {v.language.map((item) => (
+                  <Chip key={v.label} label={item} />
+                ))}
+              </Stack>
             </CardContent>
             <CardActions>
               <Button size="small" onClick={() => window.open(v.link, '_blank', 'noopener,noreferrer')}>
