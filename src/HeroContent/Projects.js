@@ -63,9 +63,9 @@ export default function Projects() {
               <Typography variant="body2" color="text.secondary" gutterBottom>
                 {v.caption}
               </Typography>
-              <Stack direction="row" spacing="0.2rem">
-                {v.language.map((item) => (
-                  <Chip key={v.label} label={item} />
+              <Stack direction="row" spacing="0.2rem" flexGrow="wrap" useFlexGap>
+                {v.language?.map((item) => (
+                  <Chip key={item} label={item} />
                 ))}
               </Stack>
             </CardContent>
