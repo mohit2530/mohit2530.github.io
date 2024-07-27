@@ -5,11 +5,11 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      label: 'JWT Tokens',
+      label: 'Stormrider JWT Application',
       language: ['Go'],
       imageUrl: './token.jpg',
-      caption: 'Jwt tokens built in Go programming language with an expiry time set from client.',
-      link: 'https://github.com/mohit2530/jwt-tokens',
+      caption: 'Jwt tokens built in Go programming language with file system storage.',
+      link: 'https://github.com/mohit2530/stormrider',
     },
     {
       id: 2,
