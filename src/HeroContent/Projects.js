@@ -49,7 +49,10 @@ export default function Projects() {
           <Typography variant="body1">Peek into my engineering side.</Typography>
         </Stack>
       </Stack>
-      <Stack flexWrap="wrap" useFlexGap spacing="2rem" direction="row" sx={{ mt: '2rem' }}>
+      <Stack
+        sx={{ flexWrap: 'wrap', gap: '2rem', flexDirection: 'row', justifyContent: 'space-between', padding: '1rem 2rem' }}
+        useFlexGap
+      >
         {projects.map((v) => (
           <Card key={v.id} sx={{ width: '25rem' }}>
             <CardMedia sx={{ height: 140 }} image={v.imageUrl} title="green iguana" />
@@ -57,7 +60,7 @@ export default function Projects() {
               <Typography gutterBottom variant="h5" component="div">
                 {v.label}
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" color="text.secondary" gutterBottom>
                 {v.caption}
               </Typography>
               <Stack direction="row" spacing="0.2rem">
