@@ -6,8 +6,9 @@ import { useState } from 'react';
 import MainContent from './HeroContent/MainContent';
 import BodyContent from './HeroContent/BodyContent';
 import Projects from './HeroContent/Projects';
+import Connect from './Contact/Connect';
+import ContactForm from './Contact/ContactForm';
 import Footer from './Footer/Footer';
-import Contact from './Contact/Contact';
 
 function App() {
   const [lightMode, setLightMode] = useState(true);
@@ -22,7 +23,8 @@ function App() {
       <BodyContent />
       <Projects />
       <Divider />
-      <Contact />
+      <ContactForm />
+      <Connect />
       <Footer />
     </ThemeProvider>
   );
